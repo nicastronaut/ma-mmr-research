@@ -1,5 +1,9 @@
 # De-Confounding Live Pelagic Odontocete Entrapment from Decomposed Carcass Drift in Cape Cod, Massachusetts (2000–2025)
 
+> [!NOTE]
+> The contents of this paper are AI-assisted for convenience and was manually reviewed and edited for accuracy by the author.
+
+
 **Stage 1 Journal-Style Research Paper**  
 **Repository Copy:** [`STAGE1_PAPER.md`](STAGE1_PAPER.md)  
 **Original Reference Edition:** [`stage1_mini_paper.md`](STAGE1_MINI_PAPER.md)  

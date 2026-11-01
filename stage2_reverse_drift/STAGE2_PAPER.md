@@ -1,5 +1,9 @@
 # Rewinding the Ocean: Lagrangian Reverse-Drift Backtracking of Decomposed & Bycaught Cetaceans in Massachusetts (2000–2025)
 
+> [!NOTE]
+> The contents of this paper are AI-assisted for convenience and was manually reviewed and edited for accuracy by the author.
+
+
 **Stage 2 Journal-Style Research Paper (`Engine v2` — 1:500k Geographic Coastline Edition)**  
 **Repository Copy:** [`STAGE2_PAPER.md`](STAGE2_PAPER.md)  
 **Original Reference Edition:** [`stage2_mini_paper.md`](STAGE2_MINI_PAPER.md)  
