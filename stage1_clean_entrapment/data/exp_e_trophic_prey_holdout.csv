@@ -1,0 +1,13 @@
+target,model,version,month_pooled,model_pooled,rel_lift_pooled (%),ci_95_rel_lift,boot_positive (%),rel_lift_yrmean (%),wins_of_5
+y_live_odont_any,1. Expert 1: Physical Trap Only,raw,0.1397,0.1659,18.8,"[+1.2%, +44.9%]",98.9,22.7,4/5
+y_live_odont_any,1. Expert 1: Physical Trap Only,anomaly,0.1397,0.1603,14.8,"[-4.7%, +39.6%]",93.1,12.6,3/5
+y_live_odont_any,2. Expert 2: Trophic/Prey Only,raw,0.1397,0.1541,10.3,"[-12.2%, +42.3%]",84.5,-0.6,3/5
+y_live_odont_any,2. Expert 2: Trophic/Prey Only,anomaly,0.1397,0.1598,14.4,"[-9.7%, +49.5%]",89.0,2.6,3/5
+y_live_odont_any,3. Two-Expert Joint (Physics x Prey),raw,0.1397,0.1782,27.6,"[+7.5%, +54.9%]",99.7,20.4,3/5
+y_live_odont_any,3. Two-Expert Joint (Physics x Prey),anomaly,0.1397,0.1861,33.2,"[+12.4%, +60.1%]",100.0,27.7,3/5
+y_live_odont_mse,1. Expert 1: Physical Trap Only,raw,0.0653,0.0884,35.3,"[-5.5%, +99.5%]",94.9,57.1,3/5
+y_live_odont_mse,1. Expert 1: Physical Trap Only,anomaly,0.0653,0.0686,5.0,"[-20.7%, +61.6%]",69.4,55.7,3/5
+y_live_odont_mse,2. Expert 2: Trophic/Prey Only,raw,0.0653,0.0878,34.5,"[-7.8%, +120.9%]",93.5,20.6,4/5
+y_live_odont_mse,2. Expert 2: Trophic/Prey Only,anomaly,0.0653,0.0909,39.1,"[-3.5%, +130.8%]",96.1,15.1,4/5
+y_live_odont_mse,3. Two-Expert Joint (Physics x Prey),raw,0.0653,0.085,30.2,"[+6.2%, +73.4%]",99.3,32.4,4/5
+y_live_odont_mse,3. Two-Expert Joint (Physics x Prey),anomaly,0.0653,0.0773,18.3,"[-5.4%, +61.1%]",93.9,38.9,4/5

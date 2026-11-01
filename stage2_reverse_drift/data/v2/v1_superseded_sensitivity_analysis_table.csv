@@ -1,0 +1,6 @@
+Configuration,Mean_Drift_Days,Mean_Displacement_km,Stellwagen_MassBay_Pct,CapeCodBay_Pct,SouthernShelf_Pct,Porpoise_Northern_Shelf_Pct
+"1. Baseline Ensemble (1.5-3.5% Leeway, SST-Scaled)",6.86,47.3,35.6,28.8,17.6,91.7
+"2. Ocean Currents Only (0.0% Leeway, SST-Scaled)",6.86,30.4,23.8,47.2,16.6,92.1
+"3. Low Windage (1.5% Leeway, SST-Scaled)",6.86,41.4,32.0,34.7,17.3,91.7
+"4. High Windage (3.5% Leeway, SST-Scaled)",6.86,52.8,35.1,26.1,17.6,91.3
+"5. Unscaled Decay (1.5-3.5% Leeway, Constant 10°C)",5.99,43.3,33.0,33.2,17.7,91.6

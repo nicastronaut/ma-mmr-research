@@ -1,0 +1,8 @@
+model_label,target,version,month_pooled,model_pooled,rel_lift_pooled (%),ci_95_rel_lift (%),boot_positive (%),month_yrmean,model_yrmean,rel_lift_yrmean (%),wins_of_5
+"Original y_any (Raw, C=0.001)",y_any,raw,0.3522,0.3491,-0.9,"[-6.2%, +5.8%]",40.5,0.3585,0.348,-2.9,2/5
+"Original y_any (Anomaly, C=0.01)",y_any,anomaly,0.3522,0.3453,-2.0,"[-8.5%, +3.8%]",26.6,0.3585,0.3572,-0.4,3/5
+"Clean Healthy Live Pelagic All-Events (Anomaly, C=0.01)",y_live_odont_any,anomaly,0.1397,0.1569,12.3,"[-6.2%, +35.7%]",91.1,0.1578,0.1835,16.3,3/5
+"Clean Healthy Live Pelagic All-Events (Raw, C=0.01)",y_live_odont_any,raw,0.1397,0.1712,22.5,"[+2.3%, +47.6%]",98.8,0.1578,0.1981,25.6,3/5
+"Original y_mse (Raw, C=0.3)",y_mse,raw,0.0832,0.0876,5.3,"[-13.7%, +46.4%]",70.0,0.0979,0.1107,13.1,3/5
+"Clean Live Pelagic MSE (Raw, C=0.3)",y_live_odont_mse,raw,0.0653,0.0861,31.9,"[-6.5%, +82.1%]",94.0,0.0796,0.119,49.4,4/5
+"Clean Live Pelagic MSE (Anomaly, C=0.3)",y_live_odont_mse,anomaly,0.0653,0.0678,3.8,"[-22.8%, +62.7%]",65.1,0.0796,0.1179,48.0,3/5

@@ -1,0 +1,15 @@
+# Python & Jupyter artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.DS_Store
+
+# Temporary scratch scripts
+**/scratch/
+stage2_reverse_drift/generate_stage2_10_figures.py
+stage2_reverse_drift/generate_stage2_split_1to500k_figures.py
+stage2_reverse_drift/update_stage2_figures_user_feedback.py
+
+# Large raw NetCDF ocean forcing cube (>50 MB GitHub warning limit)
+*.nc

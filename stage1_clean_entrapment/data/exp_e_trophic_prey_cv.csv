@@ -1,0 +1,13 @@
+target,model,version,month_pooled,model_pooled,rel_lift_pooled (%),month_yrmean,model_yrmean,rel_lift_yrmean (%),wins_of_12
+y_live_odont_any,1. Expert 1: Physical Trap Only (136 feats),raw,0.0945,0.1137,20.3,0.1057,0.1264,19.5,7
+y_live_odont_any,1. Expert 1: Physical Trap Only (136 feats),anomaly,0.0945,0.1142,20.8,0.1057,0.1383,30.7,10
+y_live_odont_any,2. Expert 2: Trophic/Prey Only (48 feats),raw,0.0945,0.1031,9.0,0.1057,0.1357,28.4,10
+y_live_odont_any,2. Expert 2: Trophic/Prey Only (48 feats),anomaly,0.0945,0.099,4.7,0.1057,0.1306,23.5,9
+y_live_odont_any,3. Two-Expert Joint Product (Physics x Prey),raw,0.0945,0.1188,25.6,0.1057,0.1365,29.1,9
+y_live_odont_any,3. Two-Expert Joint Product (Physics x Prey),anomaly,0.0945,0.1199,26.9,0.1057,0.1461,38.2,10
+y_live_odont_mse,1. Expert 1: Physical Trap Only (136 feats),raw,0.0399,0.1053,164.3,0.0499,0.0817,63.7,8
+y_live_odont_mse,1. Expert 1: Physical Trap Only (136 feats),anomaly,0.0399,0.0939,135.7,0.0499,0.0802,60.7,6
+y_live_odont_mse,2. Expert 2: Trophic/Prey Only (48 feats),raw,0.0399,0.0694,74.1,0.0499,0.0989,98.3,8
+y_live_odont_mse,2. Expert 2: Trophic/Prey Only (48 feats),anomaly,0.0399,0.0649,62.9,0.0499,0.1075,115.5,9
+y_live_odont_mse,3. Two-Expert Joint Product (Physics x Prey),raw,0.0399,0.1148,188.0,0.0499,0.0901,80.7,8
+y_live_odont_mse,3. Two-Expert Joint Product (Physics x Prey),anomaly,0.0399,0.1009,153.2,0.0499,0.0985,97.4,7

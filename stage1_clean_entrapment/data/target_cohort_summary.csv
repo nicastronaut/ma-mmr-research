@@ -1,0 +1,9 @@
+target,full_days (9497),full_rate (%),dev_days (2000-2020),dev_rate (%),hold_days (2021-2025),hold_rate (%)
+y_any,2155,22.69,1651,21.52,504,27.6
+y_decomp_drift,1367,14.39,1083,14.12,284,15.55
+y_live_odont_all_any,782,8.23,557,7.26,225,12.32
+y_live_odont_any,693,7.3,487,6.35,206,11.28
+y_live_odont_alive,481,5.06,337,4.39,144,7.89
+y_mse,382,4.02,263,3.43,119,6.52
+y_live_odont_mse,312,3.29,214,2.79,98,5.37
+y_live_odont_nosick_mse,301,3.17,204,2.66,97,5.31

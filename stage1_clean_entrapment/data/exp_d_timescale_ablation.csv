@@ -1,0 +1,7 @@
+target,horizon_set,C,month_pooled,model_pooled,rel_lift_pooled (%),month_yrmean,model_yrmean,rel_lift_yrmean (%),wins_of_12
+y_live_odont_any,"Long-Term Precondition Only (30d, 42 cols)",0.01,0.0945,0.1152,21.9,0.1057,0.1388,31.2,8
+y_live_odont_any,"Short-Term Acute Trap Only (0-7d + Tides, 94 cols)",0.01,0.0945,0.1232,30.3,0.1057,0.1263,19.5,9
+y_live_odont_any,Both Timescales Combined (Full 136 cols),0.01,0.0945,0.1137,20.3,0.1057,0.1264,19.5,7
+y_live_odont_mse,"Long-Term Precondition Only (30d, 42 cols)",0.3,0.0399,0.1066,167.4,0.0499,0.0798,59.9,7
+y_live_odont_mse,"Short-Term Acute Trap Only (0-7d + Tides, 94 cols)",0.3,0.0399,0.0989,148.1,0.0499,0.0742,48.8,8
+y_live_odont_mse,Both Timescales Combined (Full 136 cols),0.3,0.0399,0.1053,164.3,0.0499,0.0817,63.7,8

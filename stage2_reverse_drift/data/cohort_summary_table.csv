@@ -1,0 +1,8 @@
+drifter_cohort,n_records,n_fresh,n_mod_decomp,n_adv_decomp,n_alive_hi,pct_spring_mam,pct_winter_djf,pct_summer_jja,pct_autumn_son
+0. Non-Drifter (Live / MSE / Mummified),2450,0,1,1,2005,26.6,29.2,25.4,18.8
+1. Confirmed Fishery / Entanglement,112,14,51,10,30,25.9,22.3,22.3,29.5
+2. Confirmed Vessel Strike,23,1,12,4,6,26.1,8.7,39.1,26.1
+3. Harbor Porpoise Carcass,618,98,414,106,0,59.2,29.6,7.1,4.0
+4. Pelagic Dolphin Carcass,1344,244,859,241,0,33.0,40.4,9.4,17.3
+5. Large Whale / Other Carcass,185,17,82,86,0,31.9,16.8,34.1,17.3
+6. Offshore EEZ Sighting (Validation),99,10,60,19,5,30.3,17.2,36.4,16.2

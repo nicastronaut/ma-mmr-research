@@ -1,0 +1,9 @@
+target,feature_set,version,C,pooled_pr_auc,rel_lift_pooled (%),yrmean_pr_auc,rel_lift_yrmean (%),wins_of_12
+y_live_odont_any,Core 123 Predictors,raw,0.01,0.1058,11.9,0.1182,11.8,6
+y_live_odont_any,Core 123 Predictors,anomaly,0.01,0.11,16.3,0.1384,30.8,10
+y_live_odont_any,Core 123 + 10 Gradients/Synergy (133),raw,0.01,0.1137,20.3,0.1264,19.5,7
+y_live_odont_any,Core 123 + 10 Gradients/Synergy (133),anomaly,0.01,0.1142,20.8,0.1383,30.7,10
+y_live_odont_mse,Core 123 Predictors,raw,0.3,0.0923,131.5,0.0746,49.4,6
+y_live_odont_mse,Core 123 Predictors,anomaly,0.3,0.0894,124.3,0.0743,49.0,6
+y_live_odont_mse,Core 123 + 10 Gradients/Synergy (133),raw,0.3,0.1053,164.3,0.0817,63.7,8
+y_live_odont_mse,Core 123 + 10 Gradients/Synergy (133),anomaly,0.3,0.0939,135.7,0.0802,60.7,6
