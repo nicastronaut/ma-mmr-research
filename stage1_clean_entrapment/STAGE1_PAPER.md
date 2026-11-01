@@ -86,13 +86,13 @@ Across our three NOAA harmonic tide stations, tidal amplitude varies dramaticall
 
 Because the intertidal sand and mudflats of Wellfleet, Brewster, and Dennis have an ultra-flat slope (~1 vertical foot of drop per 1,000+ horizontal feet [1]), **Wellfleet's vertical tidal range (`3.21 m`, $7.5\times$ larger than Nantucket Sound's) acts as a direct geometric ruler for how many horizontal miles of mudflats drain completely dry every 6 hours**. Mathematically, `bay_tide_spring_neap` ranks each day's Wellfleet vertical range as a percentile (`0.0` to `1.0`) within a centered 29-day lunar window:
 
-$$\text{bay\_tide\_spring\_neap}(t) = \text{PercentileRank}_{[t-14,\,t+14]}\!\left(\text{HighTide}_t - \text{LowTide}_t\right)$$
+$$\text{bay\\_tide\\_spring\\_neap}(t) = \text{PercentileRank}_{[t-14,\,t+14]}\!\left(\text{HighTide}_t - \text{LowTide}_t\right)$$
 
 To capture both the offshore funnel into Cape Cod Bay and the mechanical mudflat trap at Wellfleet, our `11` engineered physical interaction features span three mechanisms:
 1. **Cross-Region Thermal Front Gradients (`grad_bay_outer_sst` & `grad_bay_sound_sst` at `3d`, `7d`, `30d` lags — `6` features):** Computed as $\text{SST}_{\text{bay}} - \text{SST}_{\text{outer}}$ and $\text{SST}_{\text{bay}} - \text{SST}_{\text{sound}}$, these measure whether shallow Cape Cod Bay is cooling or warming faster than the adjacent deep Atlantic shelf or Nantucket Sound, creating thermal boundaries that aggregate baitfish [3, 21].
 2. **Cross-Region Mixed-Layer Depth Gradients (`grad_bay_outer_mld` at `3d`, `7d`, `30d` lags — `3` features):** Computed as $\text{MLD}_{\text{bay}} - \text{MLD}_{\text{outer}}$. In oceanography, **Mixed Layer Depth (`MLD`)** is the depth to which wind and waves churn the upper ocean into a uniform temperature layer. When `MLD` shoals inside Cape Cod Bay relative to the deep Outer Cape shelf, pelagic forage fish and the dolphins pursuing them are compressed vertically into the shallow surface layer.
 3. **Onshore Wind $\times$ Spring-Tide Synergy (`syn_bay_wind_v_tide` & `syn_bay_wind_u_tide` at `3d`, `7d` lags):**
-   $$\text{syn\_bay\_wind\_v\_tide} = (-\text{bay\_wind\_v}) \times \text{bay\_tide\_spring\_neap}, \qquad \text{syn\_bay\_wind\_u\_tide} = \text{bay\_wind\_u} \times \text{bay\_tide\_spring\_neap}$$
+   $$\text{syn\\_bay\\_wind\\_v\\_tide} = (-\text{bay\\_wind\\_v}) \times \text{bay\\_tide\\_spring\\_neap}, \qquad \text{syn\\_bay\\_wind\\_u\\_tide} = \text{bay\\_wind\\_u} \times \text{bay\\_tide\\_spring\\_neap}$$
    Because meteorological velocity splits into east–west (`u`, positive blowing East) and north–south (`v`, negative blowing South) components, negative `bay_wind_v` (north wind blowing south into the Bay hook) and positive `bay_wind_u` (west wind blowing east onto Wellfleet) peak simultaneously with `bay_tide_spring_neap` when gale-force onshore winds push water and animals onto the flats right as an extreme Full or New Moon tide drains them dry.
 
 ---
@@ -184,7 +184,7 @@ Why does a purely physical weather and tidal model still face a performance ceil
 
 In the original capstone, satellite `MODIS Aqua` Chlorophyll-a (`chl`) was excluded from the `123` core predictors because winter cloud cover blocked `~72%` of daily images and the sensor did not launch until mid-2002. Moreover, phytoplankton (`chl`) sits at the bottom of the marine food chain, two full trophic steps below toothed whales:
 
-$$\text{Sunlight }(\texttt{zeu}) \longrightarrow \text{Phytoplankton }(\texttt{npp}) \longrightarrow \text{Zooplankton }(\texttt{zooc}) \longrightarrow \text{Forage Fish \& Squid }(\texttt{mnkc\_epi}) \longrightarrow \text{Pelagic Dolphins}$$
+$$\text{Sunlight }(\texttt{zeu}) \longrightarrow \text{Phytoplankton }(\texttt{npp}) \longrightarrow \text{Zooplankton }(\texttt{zooc}) \longrightarrow \text{Forage Fish \& Squid }(\texttt{mnkc\\_epi}) \longrightarrow \text{Pelagic Dolphins}$$
 
 To incorporate the full biological food web without cloud gaps, in [`03_trophic_prey_integration.ipynb`](notebooks/03_trophic_prey_integration.ipynb) we extracted 26 years (`1999–2025`, `9,558` days, **`100.0%` cloud-free daily coverage**) of `0.083°` (`~8 km`) ocean food-web fields from Copernicus Marine's **Global Ocean Low and Mid-Trophic Levels Biomass Hindcast (`SEAPODYM`, `cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i`)** [19, 20] across `bay`, `outer`, and `sound` ([`cmems_lmtl_prey_daily_1999_2025.parquet`](data/cmems_lmtl_prey_daily_1999_2025.parquet)). Across the 3 regions and 4 cross-zone gradients (`bay minus outer` and `bay minus sound`), lagged over `3d`, `7d`, and `30d` windows ending at `D-1` (**`48` trophic features total**), these variables track:
 * **`npp` (`[mg C m⁻² day⁻¹]`):** Net Primary Production (daily phytoplankton carbon fixation at the base of the food web).
