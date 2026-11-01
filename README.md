@@ -21,8 +21,6 @@ This repository contains a two-stage oceanographic, ecological, and machine lear
 ```text
 marine_bio/
 ├── README.md
-├── RESEARCH_LOG.md
-├── STAGE2_REVERSE_DRIFT_ROADMAP.md
 ├── stage1_clean_entrapment/
 │   ├── STAGE1_PAPER.md                      # Stage 1 Journal Edition (numbered references [1]-[36])
 │   ├── notebooks/
